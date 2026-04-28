@@ -26,8 +26,9 @@ This project implements an **end-to-end deep learning pipeline** that takes ultr
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
+```
 breast-cancer-cnn/
 │
 ├── data/                 (Not included - see dataset section)
@@ -41,11 +42,10 @@ breast-cancer-cnn/
 │
 ├── model/                (Saved trained model - excluded from repo)
 │
-├── outputs/
-│   ├── accuracy.png
-│   ├── loss.png
-│   ├── pr_curve.png
-│   └── roc.png
+├── accuracy.png
+│── loss.png
+│── pr_curve.png
+│── roc.png
 │
 ├── test_images/
 │   ├── benign (12).png
@@ -56,11 +56,10 @@ breast-cancer-cnn/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
----
+```
 
 ##  Model Architecture
-
+```
 The CNN model consists of:
 - Conv2D (32 filters, ReLU) → MaxPooling  
 - Conv2D (64 filters, ReLU) → MaxPooling  
@@ -69,7 +68,7 @@ The CNN model consists of:
 - Dense (128 neurons, ReLU)  
 - Dropout (0.5)  
 - Output layer (Sigmoid activation)
-
+```
 ##  Dataset
 
 Dataset: Breast Ultrasound Images Dataset  
@@ -77,6 +76,7 @@ Source: Kaggle
  Dataset is not included due to size limitations.
 ###  Dataset Setup
 Download and organize the dataset as:
+```
 data/
 ├── train/
 │   ├── benign/
@@ -85,7 +85,7 @@ data/
 └── val/
     ├── benign/
     └── malignant/
---
+```
 ##  Image Preprocessing
 
 - Images resized to **128 × 128**
