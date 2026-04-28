@@ -24,9 +24,9 @@ def predict_image(img_path):
     result = "MALIGNANT" if prediction > THRESHOLD else "BENIGN"
     return result, prediction
 
-# ==============================
-# TEST LOOP
-# ==============================
+
+# Testing part 
+
 
 print("Running predictions...\n")
 for img_name in os.listdir(TEST_FOLDER):
