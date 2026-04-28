@@ -1,6 +1,7 @@
 #  Breast Cancer Detection using CNN
 
 A deep learning project that classifies breast ultrasound images into **Benign** and **Malignant** categories using a Convolutional Neural Network (CNN).
+--
 The model is trained on a dataset of MRI images and achieves ~92% accuracy on the test set.
 
 ##  Overview
